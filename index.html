@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Github Profile</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search Github Profile</h1>
+      <form id="inputsystem"> 
+        <input id="profileName" placeholder="Enter your github profile" onsubmit="profileSearch(event)" required/>
+        <button type="submit" id="searchButton" >Search</button>
+      </form>
+      <div class="card hide">
+        <div class="topsection">
+          <img id="image" src="./image/me.jpg" />
+          <div class="username">
+            <h2 id="Name">Debashis Dhali</h2>
+            <h3 id="userName" >@debashis96</h3>
+          </div>
+          <a href="" id="profileCheckingBtn" target="_blank"><button >Check Profile</button></a>
+        </div>
+        <div class="aboutsection">
+          <h2>About</h2>
+          <p id="about">Frontened Developer || Backend Developer || Full Stack Developer</p>
+        </div>
+        <div class="bottomsection">
+          <div class="followers">
+            <h2>Followers</h2>
+            <h3 id="followers">10.2M</h3>
+          </div>
+          <div class="following">
+            <h2>Followings</h2>
+            <h3 id="followings">10.32K</h3>
+          </div>
+          <div class="rapoes">
+            <h2>Rapoes</h2>
+            <h3 id="rapoes">.952K</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
